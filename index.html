@@ -1,95 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio</title>
+    <title>Portfolio</title>
 
-    <!-- Link de BootStrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    <!-- ENLACES PROPIOS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- ENLACES DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
         crossorigin="anonymous"></script>
-
-    <!-- Añadimos nuestros archivo css y javascript -->
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
 </head>
-
 <body>
-    <!-- ENLACES DE NAVEGACION -->
-    <nav>
-        <a href="http://">Inicio</a>
-        <a href="http://">Datos Sobre Mi</a>
-        <a href="http://">Proyectos</a>
-        <a href="http://">Estudios</a>
-        <a href="http://">Habilidades</a>
-        <a href="http://">Contacto</a>
-    </nav>
+    <header>
+        <h3 id="inicio">< Alberto. dev ></h3>
 
-    <!-- CONTENIDO DEL PORTFOLIO -->
-    <main>
-        <!-- INICIO -->
-        <article id="inicio">
-            <img src="/img/perfil.jpg" alt="Alberto Godoy Borrego">
-            <div>
-                <h3>ALBERTO GODOY BORREGO</h3>
-                <p>PROGRAMADOR WEB FULLSTACK</p>
-                <button class="btn btn-outline-warning" id="descargar_cv">DESCARGAR CV</button>
-                <div id="enlaces">
-                    <a href="https://www.linkedin.com/in/alberto-godoy-borrego-817068168" target="_blank">
-                        <img src="/img/iconos/linkedin.png" alt="LINKEDLIN">
-                    </a>
-                    <a href="https://github.com/agb2000">
-                        <img src="/img/iconos/github.png" alt="GITHUB">
-                    </a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="#">Inicio</a>
+                  <a class="nav-link" href="#">Proyectos</a>
+                  <a class="nav-link" href="#">Tecnologías</a>
+                  <a class="nav-link" href="#">Contacto</a>
                 </div>
+              </div>
             </div>
+        </nav>
+
+    </header>
+
+    <main>
+      <article id="presentacion">
+        <img src="/img/perfil.jpg" alt="Perfil" id="foto-perfil">
+
+        <article id="social">
+          <h2>ALBERTO GODOY BORREGO</h2>
+          <p>Programador Web FullStack</p>
+          <button class="btn btn-outline-primary">Descargar CV</button>
+          <div>
+            <img src="/img/iconos/linkedin.png" alt="Linkedin" title="Linkedin">
+            <img src="/img/iconos/github.png" alt="Github" title="Github">
+          </div>
         </article>
+      </article>
 
-        <!-- DATOS SOBRE MI -->
-        <article id="sobre_mi">
-            <h3 class="titulo">Sobre Mi</h3>
-            <p>Bienvenidos!! Soy Alberto Godoy Borrego soy una persona trabajadora, comprometida, con ganas de 
-                aprender y seguir formándome en el ámbito de la programación aprendiendo de mis errores y e ir
-                formándome continuamente y aprendiendo nuevos conocimientos y tecnologías. Con ganas de adquirir 
-                nuevas experiencias laborales. Disfruto tanto del Fronted como del Backend, pero si tuviera que 
-                elegir alguno de los seria el Backend. <br>
+      <article id="descripcion">
+        <h3>Sobre Mi</h3>
+      </article>
 
-                En 2020 inicio una FP de desarrollador de aplicaciones web, en ese momento no sabia que estudiar, me recomendaron
-                que hiciera este modulo y no me arrepiento hasta el momento de haberlo hecho, desde que hice mi primer "Hola Mundo" en java. 
-                Fue un momento fantastico, donde me motivo a continuar con el modulo, descubri un mundo fantastico e innovador donde puedes 
-                aprender muchisimos lenguajes de programacion y framework y nuevas tecnologias de la informatica. <br>
+      <article id="proyectos">
+        <h3>Proyectos</h3>
+      </article>
 
-                Cada vez me gusta mas aprender de este mundo y seguir formandome constantemente, para que algun día ser un Gran Programador
-                </p>
-        </article>
+      <article id="tencologias">
+        <h3>Tecnologías</h3>
+      </article>
 
-        <!-- PROYECTOS -->
-        <article id="proyectos">
-            <h3 class="titulo">Proyectos Realizados</h3>
-        </article>
+      <article id="contacto">
+        <h3>Contacto</h3>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>        
+      </article>
 
-        <!-- ESTUDIOS -->
-        <article id="estudios">
-            <h3 class="titulo">Estudios Realizados</h3>
-        </article>
-
-        <!-- HABILIDADES -->
-        <article id="habilidades">
-            <h3 class="titulo">Habilidades Aprendidas</h3>
-        </article>
-
-        <!-- CONTACTO -->
-        <article id="contacto">
-
-        <!-- HABILIDADES -->
-        <article id="skill">
-            <h3 class="titulo">Habilidades Aprendidas</h3>
-        </article>
     </main>
 </body>
-
 </html>
