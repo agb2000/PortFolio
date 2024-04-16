@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
 html, body{
     width: 100%;
@@ -9,10 +9,10 @@ html, body{
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    font-family: "Merriweather Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Jersey 10", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.1em;
 }
 
 body{
@@ -88,7 +88,7 @@ nav .nav-link:active{
     margin: auto;
     white-space: nowrap;     
     width: 24ch; 
-    animation: escribiendo 4.5s steps(24) infinite alternate;          
+    animation: escribiendo 4.5s steps(26) infinite alternate;          
     overflow: hidden;
 }
 
@@ -103,8 +103,8 @@ nav .nav-link:active{
 }
 
 #foto-perfil{
-    border-radius: 20%;
-    width: 20%;
+    width: 15%;
+    border-radius: 15%;
     display: inline-block;
 }
 
@@ -118,9 +118,70 @@ nav .nav-link:active{
     margin-right: 3%;
 }
 
-/* ------------------------------------------------  ------------------------------------------------ */
-#contacto h3{
+.titulo{
+    color: #BDD1CF;
+    padding-left: 1%;
+    font-weight: 800;
+}
+
+#descargar:hover{
+    background-color: #052539;
+    border: 1px solid white;
+}
+
+#proyectos .card{
+    width: 18rem; 
+    background-color: #25242D;
+}
+
+/* ------------------------------------------------ TECNOLOGIAS ------------------------------------------------ */
+#tencologias{
+    width: 100%;
+}
+
+#muestra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.conjunto{
+    width: 10%;
     text-align: center;
-    color: rgb(207, 210, 211);
-    border-bottom: 1px solid white;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+.conjunto img{
+    display: inline-block;
+    width: 50%;
+}
+
+.conjunto p{
+    margin-top: 10%;
+    font-size: 1.2em;
+    color: #F5F5F5;
+}
+
+/* ------------------------------------------------ CONTACTO ------------------------------------------------ */
+
+#contacto form{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#contacto form label{
+    color: white;
+}
+
+#contacto .col-12{
+    text-align: center;
+}
+
+#contacto .col-12 button{
+    width: 20%;
+    margin-bottom: 2%;
 }
