@@ -15,11 +15,11 @@ html, body{
     font-size: 1.1em;
 }
 
-body{
+/* body{
     background-image: url('https://s1.1zoom.me/big3/856/335412-sepik.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+} */
 
 header, main{
     width: 80%;
@@ -108,14 +108,18 @@ nav .nav-link:active{
     display: inline-block;
 }
 
-#social div{
+#social article{
     width: 100%;
     margin-top: 3%;
 }
 
-#social div img{
+#social article img{
     width: 5%;
     margin-right: 3%;
+}
+
+#social article a:visited{
+    color: #0F1727;
 }
 
 .titulo{
@@ -129,9 +133,59 @@ nav .nav-link:active{
     border: 1px solid white;
 }
 
+/* ------------------------------------------------ SOBRE MI ------------------------------------------------ */
+#descripcion b, #descripcion p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#descripcion p{
+    color: white;
+    margin-left: 2%;
+}
+
+/* ------------------------------------------------ PROYECTOS ------------------------------------------------ */
+#proyectos{
+    margin-bottom: 2%;
+}
+
 #proyectos .card{
-    width: 18rem; 
-    background-color: #25242D;
+    width: 22.5%;
+    text-align: center;
+    background-color: #131315;;
+    border: 1px solid #dd2476;
+    margin-left: 2%;
+}
+
+#proyectos .card-tittle{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F6F6F8;
+}
+
+#proyectos .card-text{
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.60em;
+    color: #9A9AA0;
+}
+
+#proyectos .tecno{
+    margin-bottom: 5%;
+}
+
+#proyectos .tecno img{
+    width: 15%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+#proyectos .btn{
+    background-color: #01BE96;
+    color: #CAECE7;
+    border: 0px;
+    width: 50%;
+    font-size: 0.70em;
+    font-family: Georgia, serif;
 }
 
 /* ------------------------------------------------ TECNOLOGIAS ------------------------------------------------ */
@@ -139,12 +193,13 @@ nav .nav-link:active{
     width: 100%;
 }
 
-#muestra{
+.muestra{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    margin-left: 2%;
 }
 
 .conjunto{
@@ -162,7 +217,7 @@ nav .nav-link:active{
 .conjunto p{
     margin-top: 10%;
     font-size: 1.2em;
-    color: #F5F5F5;
+    color: white;
 }
 
 /* ------------------------------------------------ CONTACTO ------------------------------------------------ */

@@ -1,5 +1,18 @@
 {
     "datos" : [
-        
+        {
+            "titulo_proyecto" : "TFG Cinema",
+            "descripcion_proyecto" : "Sistema de compras de entradas y butacas para ver espectáculos, de venta de productos y un foro de comentarios.",
+            "Tecnologias_Usadas" : {
+                "tecno_1" : "/img/tecno/html-5.png",
+                "tecno_2" : "/img/tecno/bootstrap.png",
+                "tecno_3" : "/img/tecno/js.png",
+                "tecno_4" : "/img/tecno/php.png",
+                "tecno_5" : "/img/tecno/mysql.png"
+            },
+            "titulo_tecnologias" : "Tecnologias Usadas",
+            "imagen_proyecto" : "/img/imagen-proyectos/TFG.png",
+            "github_proyecto" : "https://github.com/agb2000/TFG"
+        }
     ]
 }
