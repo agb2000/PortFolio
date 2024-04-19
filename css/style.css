@@ -30,24 +30,30 @@ header, main{
 /* ------------------------------------------------ HEADER ------------------------------------------------ */
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 1.2em;
 }
 
 header #inicio{
+    width: 25%;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 header nav{
-    width: 50%;
+    width: 75%;
 }
 
 /* ------------------------------------------------ NAV ------------------------------------------------ */
-nav .navbar-nav{
+nav .nav{
     width: 100%;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-item{
+    width: 20%;
+    text-align: center;
 }
 
 nav .nav-link{
@@ -55,12 +61,8 @@ nav .nav-link{
     margin-right: 5%;
 }
 
-nav .nav-link:hover{
-    color: green;
-}
-
-nav .nav-link:active{
-    color: green;
+nav .nav-link:hover, nav .nav-link:focus{
+    color: white;
 }
 
 /* ------------------------------------------------ Presentacion ------------------------------------------------ */
@@ -118,8 +120,8 @@ nav .nav-link:active{
     margin-right: 3%;
 }
 
-#social article a:visited{
-    color: #0F1727;
+#social article a{
+    text-decoration: none;
 }
 
 .titulo{
@@ -129,8 +131,9 @@ nav .nav-link:active{
 }
 
 #descargar:hover{
-    background-color: #052539;
-    border: 1px solid white;
+    background-color: #040410;
+    border-radius: 10px;
+    color: whitesmoke;
 }
 
 /* ------------------------------------------------ SOBRE MI ------------------------------------------------ */

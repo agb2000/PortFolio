@@ -20,7 +20,7 @@ function conexion_ajax_datos() {
                         let titulo = crear_nodo("h5", valores["titulo_proyecto"], {class : "card-tittle"});
                         let descripcion = crear_nodo("p", valores["descripcion_proyecto"], {class : "card-text"});
                         let titulo_tecno = crear_nodo("h5", valores["titulo_tecnologias"], {class : "card-tittle"});
-                        let enlace = crear_nodo("a", "Github", {class : "btn btn-outline-primary", href : valores["github_proyecto"]});
+                        let enlace = crear_nodo("a", "Github", {class : "btn btn-outline-primary", href : valores["github_proyecto"], target : "_blank"});
                         let tecno = crear_nodo("div", null, {class : "tecno"});
 
                         if (Object.keys(valores["Tecnologias_Usadas"]).length !== 0){
