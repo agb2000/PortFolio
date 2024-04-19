@@ -15,11 +15,11 @@ html, body{
     font-size: 1.1em;
 }
 
-/* body{
+body{
     background-image: url('https://s1.1zoom.me/big3/856/335412-sepik.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-} */
+}
 
 header, main{
     width: 80%;
