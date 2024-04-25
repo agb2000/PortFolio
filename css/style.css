@@ -20,6 +20,10 @@ header, main{
     margin: 0% 10% 0% 10%;
 }
 
+.body{
+    background-color: #161619;
+}
+
 .titulo{
     color: #69BCAE;
     padding-left: 1%;
