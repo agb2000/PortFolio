@@ -10,7 +10,7 @@ html, body{
     margin: 0%;
     padding: 0%;
     font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-size: 1.1em;
 }
@@ -23,66 +23,81 @@ html, body{
 
 header, main{
     width: 80%;
-    height: auto;
     margin: 0% 10% 0% 10%;
+}
+
+.titulo{
+    color: #69BCAE;
+    padding-left: 1%;
+    font-weight: 800;
 }
 
 /* ------------------------------------------------ HEADER ------------------------------------------------ */
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 1.2em;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    background-color: #17171B;
+    border: 1px solid #1C2531;
 }
 
 header #inicio{
-    color: white;
+    width: 25%;
     text-align: center;
+    color: #69BCAE;
 }
 
 header nav{
-    width: 50%;
+    width: 75%;
 }
 
 /* ------------------------------------------------ NAV ------------------------------------------------ */
-nav .navbar-nav{
+nav .nav{
     width: 100%;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-item{
+    width: 20%;
+    text-align: center;
 }
 
 nav .nav-link{
-    color: white;
     margin-right: 5%;
+    color: #69BCAE;
 }
 
 nav .nav-link:hover{
-    color: green;
+    color: white;
 }
 
-nav .nav-link:active{
-    color: green;
+nav .nav-link:focus{
+    color: white;
 }
 
 /* ------------------------------------------------ Presentacion ------------------------------------------------ */
 #presentacion{
     text-align: center;
     width: 100%;
+    margin-bottom: 2%;
 }
 
 #social{
     display: inline-block;
     vertical-align: middle;
-    width: 60%;
+    width: 50%;
     height: 100%;
 }
 
 #social h2{
-    color: white;
     font-weight: bolder;
+    color: white;
 }
 
 #social p{
-    color: white;
     font-size: 1.5em;
     display: block;
     margin: auto;
@@ -90,6 +105,7 @@ nav .nav-link:active{
     width: 24ch; 
     animation: escribiendo 4.5s steps(26) infinite alternate;          
     overflow: hidden;
+    color: white;
 }
 
 @keyframes escribiendo {
@@ -98,13 +114,13 @@ nav .nav-link:active{
 }
 
 #social button{
-    width: 30%;
+    width: 50%;
     font-size: 1.2em;
 }
 
 #foto-perfil{
-    width: 15%;
-    border-radius: 15%;
+    width: 20%;
+    border-radius: 5%;
     display: inline-block;
 }
 
@@ -118,29 +134,30 @@ nav .nav-link:active{
     margin-right: 3%;
 }
 
-#social article a:visited{
-    color: #0F1727;
-}
-
-.titulo{
-    color: #BDD1CF;
-    padding-left: 1%;
-    font-weight: 800;
+#social article a{
+    text-decoration: none;
 }
 
 #descargar:hover{
-    background-color: #052539;
-    border: 1px solid white;
+    background-color: #040410;
+    border-radius: 10px;
+    color: whitesmoke;
 }
 
 /* ------------------------------------------------ SOBRE MI ------------------------------------------------ */
-#descripcion b, #descripcion p{
+#sobre_mi{
+    margin-bottom: 2%;
+}
+
+#sobre_mi b{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#descripcion p{
-    color: white;
+#sobre_mi p{
+    font-size: 0.95em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-left: 2%;
+    color: white;
 }
 
 /* ------------------------------------------------ PROYECTOS ------------------------------------------------ */
@@ -176,7 +193,6 @@ nav .nav-link:active{
 #proyectos .tecno img{
     width: 15%;
     margin-right: 2%;
-    margin-bottom: 2%;
 }
 
 #proyectos .btn{
@@ -188,12 +204,22 @@ nav .nav-link:active{
     font-family: Georgia, serif;
 }
 
+#muestra_proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-left: 2%;
+}
+
 /* ------------------------------------------------ TECNOLOGIAS ------------------------------------------------ */
 #tencologias{
     width: 100%;
+    margin-bottom: 2%;
 }
 
-.muestra{
+#muestra_tecnologias{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -206,7 +232,6 @@ nav .nav-link:active{
     width: 10%;
     text-align: center;
     margin-right: 5%;
-    margin-bottom: 2%;
 }
 
 .conjunto img{
@@ -221,11 +246,9 @@ nav .nav-link:active{
 }
 
 /* ------------------------------------------------ CONTACTO ------------------------------------------------ */
-
 #contacto form{
     width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin: 0% 5% 0% 5%;
 }
 
 #contacto form label{
@@ -239,4 +262,326 @@ nav .nav-link:active{
 #contacto .col-12 button{
     width: 20%;
     margin-bottom: 2%;
+    font-size: 1em;
+}
+
+#contacto .col-12 button:hover{
+    background-color: #040410;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+/* Teléfonos */
+@media screen and (max-width: 447px){
+    header, main{
+        width: 90%;
+        margin: 0% 5% 0% 5%;
+    }
+
+    .titulo{
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0%;
+    }
+
+    /* ------------------------------------------------ HEADER AND NAV ------------------------------------------------ */
+    header{
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+
+    header #inicio{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .nav{
+        flex-direction: column;
+    }
+
+    nav .nav-item{
+        width: 100%;
+    }
+
+    /* ------------------------------------------------ PRESENTACION ------------------------------------------------ */
+    #presentacion{
+        margin-bottom: 5%;
+    }
+
+    #foto-perfil{
+        width: 95%;
+        margin: 1% auto 1% auto;
+    }
+
+    #social{
+        width: 100%;
+    }
+
+    #social h2{
+        font-size: 1.2em;
+    }
+
+    #social #descargar{
+        width: 100%;
+    }
+
+    #social article img{
+        width: 15%;
+    }
+
+    /* ------------------------------------------------ SOBRE MI ------------------------------------------------ */
+    #sobre_mi p{
+        text-align: center;
+    }
+
+    /* ------------------------------------------------ PROYECTOS ------------------------------------------------ */
+    #proyectos{
+        margin-bottom: 5%;
+    }
+
+    #muestra_proyectos{
+        flex-direction: column;
+    }
+
+    #proyectos .card{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    /* ------------------------------------------------ TECNOLOGIAS ------------------------------------------------ */
+    #tecnologias{
+        margin-bottom: 5%;
+    }
+
+    #muestra_tecnologias{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .conjunto{
+        width: 40%;
+        margin-top: 2%;
+    }
+
+    .conjunto img{
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    .conjunto p{
+        font-size: 1em;
+    }
+
+    /* ------------------------------------------------ CONTACTO ------------------------------------------------ */
+    #contacto form label{
+        width: 100%;
+        text-align: center;
+    }
+
+    #contacto .col-12 button{
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 447px) and (max-width: 767px){
+    header, main{
+        width: 90%;
+        margin: 0% 5% 0% 5%;
+    }
+
+    .titulo{
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0%;
+    }
+    
+    /* ------------------------------------------------ HEADER AND NAV ------------------------------------------------ */
+    header{
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+
+    header #inicio{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .nav{
+        flex-direction: row;
+    }
+
+    nav .nav-item{
+        width: 45%;
+    }
+
+    /* ------------------------------------------------ PRESENTACION ------------------------------------------------ */
+    #presentacion{
+        text-align: left;
+        margin-bottom: 5%;
+    }
+
+    #foto-perfil{
+        width: 40%;
+    }
+
+    #social{
+        text-align: center;
+        width: 55%;
+    }
+
+    #social #descargar{
+        width: 90%;
+    }
+
+    #social article img{
+        width: 15%;
+    }
+
+    /* ------------------------------------------------ PROYECTOS ------------------------------------------------ */
+    #proyectos{
+        margin-bottom: 5%;
+    }
+
+    #proyectos .card{
+        width: 45%;
+    }
+
+    #proyectos .card-body a{
+        width: 100%;
+    }
+
+    /* ------------------------------------------------ TECNOLOGIAS ------------------------------------------------ */
+    #tecnologias{
+        margin-bottom: 5%;
+    }
+
+    #muestra_tecnologias{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .conjunto{
+        width: 20%;
+        margin-top: 2%;
+    }
+
+    .conjunto img{
+        width: 40%;
+        margin-top: 10%;
+    }
+
+    .conjunto p{
+        font-size: 1em;
+    }
+
+    /* ------------------------------------------------ CONTACTO ------------------------------------------------ */
+    #contacto form label{
+        width: 100%;
+        text-align: center;
+    }
+
+    #contacto .col-12 button{
+        width: 40%;
+    }
+}
+
+/* Escritorio pequeño / tablet */
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+    header, main{
+        width: 90%;
+        margin: 0% 5% 0% 5%;
+    }
+
+    .titulo{
+        font-size: 1.5em;
+    }
+
+    header, #presentacion, #sobre_mi, #proyectos, #tecnologias{
+        margin-bottom: 3%;
+    }
+
+    /* ------------------------------------------------ HEADER AND NAV ------------------------------------------------ */
+    nav .nav{
+        justify-content: space-around;
+    }
+
+    nav .nav-item{
+        width: 40%;
+    }
+
+    /* ------------------------------------------------ PRESENTACION ------------------------------------------------ */
+    #foto-perfil{
+        width: 30%;
+    }
+
+    #social{
+        width: 50%;
+    }
+
+    #social article img{
+        width: 10%;
+    } 
+
+    #social #descargar{
+        width: 50%;
+    }
+
+    /* ------------------------------------------------ PROYECTOS ------------------------------------------------ */
+
+    #proyectos .card{
+        width: 40%;
+    }
+
+    /* ------------------------------------------------ CONTACTO ------------------------------------------------ */
+    #contacto .col-12 button{
+        width: 30%;
+    }
+}
+
+/* Escritorio grande */
+@media screen and (min-width: 992px) and (max-width: 1486px){
+
+    header, main{
+        width: 90%;
+        margin: 0% 5% 0% 5%;
+    }
+
+    header, #presentacion, #sobre_mi, #proyectos, #tecnologias{
+        margin-bottom: 3%;
+    }
+
+    /* ------------------------------------------------ HEADER AND NAV ------------------------------------------------ */
+    nav .nav-item{
+        width: 20%;
+    }
+
+    /* ------------------------------------------------ PRESENTACION ------------------------------------------------ */
+    #foto-perfil{
+        width: 20%;
+    }
+
+    #social{
+        width: 50%;
+    }
+
+    #social article img{
+        width: 10%;
+    } 
+
+    #social #descargar{
+        width: 50%;
+    }
+
+    /* ------------------------------------------------ PROYECTOS ------------------------------------------------ */
+
+    #proyectos .card{
+        width: 28%;
+    }
+
+    /* ------------------------------------------------ CONTACTO ------------------------------------------------ */
+    #contacto .col-12 button{
+        width: 30%;
+    }
 }

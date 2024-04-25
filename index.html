@@ -17,29 +17,29 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
         crossorigin="anonymous"></script>
 </head>
-<body style="background-color: #0F1727;">
+<body style="background-color: #161619;">
     <header>
         <h3 id="inicio">< Alberto. dev ></h3>
 
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="#">Inicio</a>
-                  <a class="nav-link" href="#">Proyectos</a>
-                  <a class="nav-link" href="#">Tecnologías</a>
-                  <a class="nav-link" href="#">Contacto</a>
-                </div>
-              </div>
-            </div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre_mi">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tencologias">Tecnologías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </nav>
-
     </header>
 
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
       <article id="presentacion">
         <img src="/img/perfil.jpg" alt="Perfil" id="foto-perfil">
 
@@ -58,25 +58,29 @@
         </article>
       </article>
 
-      <article id="descripcion">
+      <article id="sobre_mi">
         <h3 class="titulo">Sobre Mi</h3>
         <p>
-          Tengo 24 años y he acabado mis estudios en <b>Desarrollo de Aplicaciones Web</b>, el lenguaje que mas he desarrollado ha sido en <b>PHP,</b> 
-          aunque también he dado lenguajes que me gustan como <b>JAVASCRIPT, JAVA, HTML, CSS, MYSQL.</b> Me apasiona tanto el desarrollo Fronted como el Backend.
+          Tengo 23 años y he finalizado mis estudios en <b>Desarrollo de Aplicaciones Web</b> donde el lenguaje mas usado para el desarrollo ha sido <b>PHP.</b> 
+          También tengo conocimientos en otros lenguajes usados para estos desarrollos tales como <b>JAVASCRIPT, JAVA, HTML, CSS, MYSQL.</b> 
+          Me apasiona tanto el desarrollo Fronted como el Backend.
+          <br><br>
+          Soy una persona <b>trabajadora y comprometida, con muchas ganas de aprender</b> y seguir formándome en el ámbito del desarrollo web.
           <br>
-          Soy una persona <b>trabajadora, comprometida, con ganas de aprender</b> y seguir formándome en el ámbito de la programación aprendiendo 
-          de mis errores y e ir formándome continuamente y aprendiendo nuevos conocimientos y tecnologías. 
-          Con ganas de adquirir experiencias y aprender nuevas tecnologias y afrontar desafios laborales para seguir creciendo profesionalmente </p>
+          Dispuesto a empezar mi carrera profesional con muchas ganas de afrontar todos los desafios que se me propongan y aprender nuevas tecnologias.
+          <br>
+          Actualmente estoy buscando trabajo y realizando cursos de formación en Udemy, estoy ahora mismo haciendo un curso de Tailwindss y más adelante empezaría con Angular junto a Node  
+        </p>
       </article>
 
       <article id="proyectos">
         <h3 class="titulo">Proyectos</h3>
-        <article class="muestra"></article>
+        <article id="muestra_proyectos"></article>
       </article>
 
       <article id="tencologias">
         <h3 class="titulo">Tecnologías</h3>
-        <article class="muestra">
+        <article id="muestra_tecnologias">
 
           <article class="conjunto">
             <img src="/img/tecno/html-5.png" alt="html-5">
@@ -89,6 +93,11 @@
           </article>
 
           <article class="conjunto">
+            <img src="/img/tecno/bootstrap.png" alt="bootstrap">
+            <p>BootStrap</p>
+          </article>
+
+          <article class="conjunto">
             <img src="/img/tecno/js.png" alt="JavaScript">
             <p>JavaScript</p>
           </article>
@@ -96,6 +105,16 @@
           <article class="conjunto">
             <img src="/img/tecno/php.png" alt="php">
             <p>Php</p>
+          </article>
+
+          <article class="conjunto">
+            <img src="/img/tecno/java.png" alt="java">
+            <p>Java</p>
+          </article>
+
+          <article class="conjunto">
+            <img src="/img/tecno/mysql.png" alt="mysql">
+            <p>MySql</p>
           </article>
 
         </article>
@@ -109,7 +128,7 @@
             <input type="text" class="form-control" id="asunto" placeholder="Asunto Correo">
           </div>
           <div class="col-md-6">
-            <label for="correo-electronico" class="form-label">Correo Electrónico</label>
+            <label for="correo-electronico" class="form-label">Correo</label>
             <input type="email" class="form-control" id="correo-electronico" placeholder="Correo Electrónico">
           </div>
           <div class="mb-3">
