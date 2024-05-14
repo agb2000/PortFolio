@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
@@ -15,23 +16,28 @@ html, body{
     font-size: 1.1em;
 }
 
-header, main{
+header,
+main {
     width: 80%;
     margin: 0% 10% 0% 10%;
 }
 
-.body{
+main{
+    padding-bottom: 2%;
+}
+
+.body {
     background-color: #161619;
 }
 
-.titulo{
+.titulo {
     color: #69BCAE;
     padding-left: 1%;
     font-weight: 800;
 }
 
 /* ------------------------------------------------ HEADER ------------------------------------------------ */
-header{
+header {
     display: flex;
     align-items: center;
     font-size: 1.2em;
@@ -41,117 +47,122 @@ header{
     border: 1px solid #1C2531;
 }
 
-header #inicio{
+header #inicio {
     width: 25%;
     text-align: center;
     color: #69BCAE;
 }
 
-header nav{
+header nav {
     width: 75%;
 }
 
 /* ------------------------------------------------ NAV ------------------------------------------------ */
-nav .nav{
+nav .nav {
     width: 100%;
     align-items: center;
     justify-content: space-between;
 }
 
-nav .nav-item{
+nav .nav-item {
     width: 20%;
     text-align: center;
 }
 
-nav .nav-link{
+nav .nav-link {
     margin-right: 5%;
     color: #69BCAE;
 }
 
-nav .nav-link:hover{
+nav .nav-link:hover {
     color: white;
 }
 
-nav .nav-link:focus{
+nav .nav-link:focus {
     color: white;
 }
 
 /* ------------------------------------------------ Presentacion ------------------------------------------------ */
-#presentacion{
+#presentacion {
     text-align: center;
     width: 100%;
     margin-bottom: 2%;
 }
 
-#social{
+#social {
     display: inline-block;
     vertical-align: middle;
     width: 50%;
     height: 100%;
 }
 
-#social h2{
+#social h2 {
     font-weight: bolder;
     color: white;
 }
 
-#social p{
+#social p {
     font-size: 1.5em;
     display: block;
     margin: auto;
-    white-space: nowrap;     
-    width: 24ch; 
-    animation: escribiendo 4.5s steps(26) infinite alternate;          
+    white-space: nowrap;
+    width: 24ch;
+    animation: escribiendo 4.5s steps(26) infinite alternate;
     overflow: hidden;
     color: white;
 }
 
 @keyframes escribiendo {
-    from {width: 0;}
-    to {width: 100%;}
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
-#social button{
+#social button {
     width: 50%;
     font-size: 1.2em;
 }
 
-#foto-perfil{
+#foto-perfil {
     width: 20%;
     border-radius: 5%;
     display: inline-block;
 }
 
-#social article{
+#social article {
     width: 100%;
     margin-top: 3%;
 }
 
-#social article img{
+#social article img {
     width: 5%;
     margin-right: 3%;
 }
 
-#social article a{
+#social article a {
     text-decoration: none;
 }
 
-#descargar:hover{
+#descargar:hover {
     background-color: #040410;
     border-radius: 10px;
     color: whitesmoke;
 }
 
 /* ------------------------------------------------ SOBRE MI ------------------------------------------------ */
-#sobre_mi{
+#sobre_mi {
     margin-bottom: 2%;
 }
 
-#sobre_mi b{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#sobre_mi b {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#sobre_mi p{
+#sobre_mi p {
     font-size: 0.95em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-left: 2%;
@@ -159,41 +170,42 @@ nav .nav-link:focus{
 }
 
 /* ------------------------------------------------ PROYECTOS ------------------------------------------------ */
-#proyectos{
+#proyectos {
     margin-bottom: 2%;
 }
 
-#proyectos .card{
+#proyectos .card {
     width: 22.5%;
     text-align: center;
-    background-color: #131315;;
+    background-color: #131315;
+    ;
     border: 1px solid #dd2476;
     margin-left: 2%;
 }
 
-#proyectos .card-tittle{
+#proyectos .card-tittle {
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #F6F6F8;
 }
 
-#proyectos .card-text{
+#proyectos .card-text {
     text-align: left;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.60em;
     color: #9A9AA0;
 }
 
-#proyectos .tecno{
+#proyectos .tecno {
     margin-bottom: 5%;
 }
 
-#proyectos .tecno img{
+#proyectos .tecno img {
     width: 15%;
     margin-right: 2%;
 }
 
-#proyectos .btn{
+#proyectos .btn {
     background-color: #01BE96;
     color: #CAECE7;
     border: 0px;
@@ -202,7 +214,7 @@ nav .nav-link:focus{
     font-family: Georgia, serif;
 }
 
-#muestra_proyectos{
+#muestra_proyectos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -212,12 +224,12 @@ nav .nav-link:focus{
 }
 
 /* ------------------------------------------------ TECNOLOGIAS ------------------------------------------------ */
-#tencologias{
+#tencologias {
     width: 100%;
     margin-bottom: 2%;
 }
 
-#muestra_tecnologias{
+#muestra_tecnologias {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -226,25 +238,51 @@ nav .nav-link:focus{
     margin-left: 2%;
 }
 
-.conjunto{
+.conjunto {
     width: 10%;
     text-align: center;
     margin-right: 5%;
 }
 
-.conjunto img{
+.conjunto img {
     display: inline-block;
     width: 50%;
 }
 
-.conjunto p{
+.conjunto p {
     margin-top: 10%;
     font-size: 1.2em;
     color: white;
 }
 
 /* ------------------------------------------------ CONTACTO ------------------------------------------------ */
-#contacto form{
+#contacto article:first-of-type {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+    text-align: center;
+}
+
+#contacto article:first-of-type div {
+    display: inline-block;
+    color: white;
+    height: auto;
+}
+
+#contacto article:first-of-type div img {
+    width: 10%;
+}
+
+#contacto article:first-of-type div a{
+    color: #01BE96;
+}
+
+#contacto article:last-of-type {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+}
+
+/* #contacto form{
     width: 90%;
     margin: 0% 5% 0% 5%;
 }
@@ -267,319 +305,389 @@ nav .nav-link:focus{
     background-color: #040410;
     border-radius: 10px;
     color: whitesmoke;
-}
+} */
 
 /* Teléfonos */
-@media screen and (max-width: 447px){
-    header, main{
+@media screen and (max-width: 447px) {
+
+    header,
+    main {
         width: 90%;
         margin: 0% 5% 0% 5%;
     }
 
-    .titulo{
+    .titulo {
         font-size: 1.5em;
         text-align: center;
         margin: 0%;
     }
 
     /* ------------------------------------------------ HEADER AND NAV ------------------------------------------------ */
-    header{
+    header {
         flex-direction: column;
         margin-bottom: 3%;
     }
 
-    header #inicio{
+    header #inicio {
         width: 100%;
         text-align: center;
     }
 
-    nav .nav{
+    nav .nav {
         flex-direction: column;
     }
 
-    nav .nav-item{
+    nav .nav-item {
         width: 100%;
     }
 
     /* ------------------------------------------------ PRESENTACION ------------------------------------------------ */
-    #presentacion{
+    #presentacion {
         margin-bottom: 5%;
     }
 
-    #foto-perfil{
+    #foto-perfil {
         width: 95%;
         margin: 1% auto 1% auto;
     }
 
-    #social{
+    #social {
         width: 100%;
     }
 
-    #social h2{
+    #social h2 {
         font-size: 1.2em;
     }
 
-    #social #descargar{
+    #social #descargar {
         width: 100%;
     }
 
-    #social article img{
+    #social article img {
         width: 15%;
     }
 
     /* ------------------------------------------------ SOBRE MI ------------------------------------------------ */
-    #sobre_mi p{
+    #sobre_mi p {
         text-align: center;
     }
 
     /* ------------------------------------------------ PROYECTOS ------------------------------------------------ */
-    #proyectos{
+    #proyectos {
         margin-bottom: 5%;
     }
 
-    #muestra_proyectos{
+    #muestra_proyectos {
         flex-direction: column;
     }
 
-    #proyectos .card{
+    #proyectos .card {
         width: 80%;
         margin-bottom: 5%;
     }
 
     /* ------------------------------------------------ TECNOLOGIAS ------------------------------------------------ */
-    #tecnologias{
+    #tecnologias {
         margin-bottom: 5%;
     }
 
-    #muestra_tecnologias{
+    #muestra_tecnologias {
         justify-content: space-between;
         align-items: center;
     }
 
-    .conjunto{
+    .conjunto {
         width: 40%;
         margin-top: 2%;
     }
 
-    .conjunto img{
+    .conjunto img {
         width: 50%;
         margin-top: 10%;
     }
 
-    .conjunto p{
+    .conjunto p {
         font-size: 1em;
     }
 
     /* ------------------------------------------------ CONTACTO ------------------------------------------------ */
-    #contacto form label{
+    #contacto article:first-of-type div {
+        display: block;
+        margin: auto 0;
+    }
+
+    #contacto article:first-of-type div img {
+        width: 15%;
+    }
+
+    #contacto article:first-of-type div h4{
+        font-size: 0.75em;
+        width: 100%;
+    }
+
+    #contacto article:first-of-type div a{
+        width: 100%;
+    }
+
+    /* #contacto form label{
         width: 100%;
         text-align: center;
     }
 
     #contacto .col-12 button{
         width: 100%;
-    }
+    } */
 }
 
 /* Tablets */
-@media screen and (min-width: 447px) and (max-width: 767px){
-    header, main{
+@media screen and (min-width: 447px) and (max-width: 767px) {
+
+    header,
+    main {
         width: 90%;
         margin: 0% 5% 0% 5%;
     }
 
-    .titulo{
+    .titulo {
         font-size: 1.5em;
         text-align: center;
         margin: 0%;
     }
-    
+
     /* ------------------------------------------------ HEADER AND NAV ------------------------------------------------ */
-    header{
+    header {
         flex-direction: column;
         margin-bottom: 3%;
     }
 
-    header #inicio{
+    header #inicio {
         width: 100%;
         text-align: center;
     }
 
-    nav .nav{
+    nav .nav {
         flex-direction: row;
     }
 
-    nav .nav-item{
+    nav .nav-item {
         width: 45%;
     }
 
     /* ------------------------------------------------ PRESENTACION ------------------------------------------------ */
-    #presentacion{
+    #presentacion {
         text-align: left;
         margin-bottom: 5%;
     }
 
-    #foto-perfil{
+    #foto-perfil {
         width: 40%;
     }
 
-    #social{
+    #social {
         text-align: center;
         width: 55%;
     }
 
-    #social #descargar{
+    #social #descargar {
         width: 90%;
     }
 
-    #social article img{
+    #social article img {
         width: 15%;
     }
 
     /* ------------------------------------------------ PROYECTOS ------------------------------------------------ */
-    #proyectos{
+    #proyectos {
         margin-bottom: 5%;
     }
 
-    #proyectos .card{
+    #proyectos .card {
         width: 45%;
     }
 
-    #proyectos .card-body a{
+    #proyectos .card-body a {
         width: 100%;
     }
 
     /* ------------------------------------------------ TECNOLOGIAS ------------------------------------------------ */
-    #tecnologias{
+    #tecnologias {
         margin-bottom: 5%;
     }
 
-    #muestra_tecnologias{
+    #muestra_tecnologias {
         justify-content: space-between;
         align-items: center;
     }
 
-    .conjunto{
+    .conjunto {
         width: 20%;
         margin-top: 2%;
     }
 
-    .conjunto img{
+    .conjunto img {
         width: 40%;
         margin-top: 10%;
     }
 
-    .conjunto p{
+    .conjunto p {
         font-size: 1em;
     }
 
     /* ------------------------------------------------ CONTACTO ------------------------------------------------ */
-    #contacto form label{
+    /* #contacto form label {
         width: 100%;
         text-align: center;
     }
 
-    #contacto .col-12 button{
+    #contacto .col-12 button {
         width: 40%;
-    }
+    } */
 }
 
 /* Escritorio pequeño / tablet */
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
-    header, main{
+    header,
+    main {
         width: 90%;
         margin: 0% 5% 0% 5%;
     }
 
-    .titulo{
+    .titulo {
         font-size: 1.5em;
     }
 
-    header, #presentacion, #sobre_mi, #proyectos, #tecnologias{
+    header,
+    #presentacion,
+    #sobre_mi,
+    #proyectos,
+    #tecnologias {
         margin-bottom: 3%;
     }
 
     /* ------------------------------------------------ HEADER AND NAV ------------------------------------------------ */
-    nav .nav{
+    nav .nav {
         justify-content: space-around;
     }
 
-    nav .nav-item{
+    nav .nav-item {
         width: 40%;
     }
 
     /* ------------------------------------------------ PRESENTACION ------------------------------------------------ */
-    #foto-perfil{
+    #foto-perfil {
         width: 30%;
     }
 
-    #social{
+    #social {
         width: 50%;
     }
 
-    #social article img{
+    #social article img {
         width: 10%;
-    } 
+    }
 
-    #social #descargar{
+    #social #descargar {
         width: 50%;
     }
 
     /* ------------------------------------------------ PROYECTOS ------------------------------------------------ */
 
-    #proyectos .card{
+    #proyectos .card {
         width: 40%;
     }
 
     /* ------------------------------------------------ CONTACTO ------------------------------------------------ */
-    #contacto .col-12 button{
-        width: 30%;
+    #contacto article:first-of-type div {
+        width: 49%;
     }
+
+    #contacto article:first-of-type div img {
+        width: 10%;
+    }
+
+    #contacto article:first-of-type div h4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contacto article:first-of-type div a {
+        width: 100%;
+        align-self: flex-end;
+    }
+
+
+    /* #contacto .col-12 button {
+        width: 30%;
+    } */
 }
 
 /* Escritorio grande */
-@media screen and (min-width: 992px) and (max-width: 1486px){
+@media screen and (min-width: 992px) and (max-width: 1486px) {
 
-    header, main{
+    header,
+    main {
         width: 90%;
         margin: 0% 5% 0% 5%;
     }
 
-    header, #presentacion, #sobre_mi, #proyectos, #tecnologias{
+    header,
+    #presentacion,
+    #sobre_mi,
+    #proyectos,
+    #tecnologias {
         margin-bottom: 3%;
     }
 
     /* ------------------------------------------------ HEADER AND NAV ------------------------------------------------ */
-    nav .nav-item{
+    nav .nav-item {
         width: 20%;
     }
 
     /* ------------------------------------------------ PRESENTACION ------------------------------------------------ */
-    #foto-perfil{
+    #foto-perfil {
         width: 20%;
     }
 
-    #social{
+    #social {
         width: 50%;
     }
 
-    #social article img{
+    #social article img {
         width: 10%;
-    } 
+    }
 
-    #social #descargar{
+    #social #descargar {
         width: 50%;
     }
 
     /* ------------------------------------------------ PROYECTOS ------------------------------------------------ */
-
-    #proyectos .card{
-        width: 28%;
+    #proyectos .card {
+        width: 25%;
     }
 
     /* ------------------------------------------------ CONTACTO ------------------------------------------------ */
-    #contacto .col-12 button{
-        width: 30%;
+    #contacto article:first-of-type div {
+        width: 49%;
     }
+
+    #contacto article:first-of-type div img {
+        width: 10%;
+    }
+
+    #contacto article:first-of-type div h4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contacto article:first-of-type div a {
+        width: 100%;
+        align-self: flex-end;
+    }
+
+    /* #contacto .col-12 button {
+        width: 30%;
+    } */
 }

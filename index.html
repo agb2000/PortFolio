@@ -18,9 +18,9 @@
         crossorigin="anonymous"></script>
 </head>
 <body class="body">
+    <!-- CABECERA -->
     <header>
         <h3 id="inicio">< Alberto. dev ></h3>
-
         <nav class="navbar navbar-expand-lg">
           <ul class="nav">
             <li class="nav-item">
@@ -39,6 +39,7 @@
         </nav>
     </header>
 
+    <!-- CONTENIDO -->
     <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
       <article id="presentacion">
         <img src="/img/perfil.jpg" alt="Perfil" id="foto-perfil">
@@ -58,6 +59,7 @@
         </article>
       </article>
 
+      <!-- SOBRE-MI -->
       <article id="sobre_mi">
         <h3 class="titulo">Sobre Mi</h3>
         <p>
@@ -73,11 +75,13 @@
         </p>
       </article>
 
+      <!-- PROYECTOS -->
       <article id="proyectos">
         <h3 class="titulo">Proyectos</h3>
         <article id="muestra_proyectos"></article>
       </article>
 
+      <!-- TECNOLOGIAS -->
       <article id="tencologias">
         <h3 class="titulo">Tecnologías</h3>
         <article id="muestra_tecnologias">
@@ -120,9 +124,29 @@
         </article>
       </article>
 
+      <!-- CONTACTO -->
       <article id="contacto">
-        <h3 class="titulo">Contacto</h3>
-        <form class="row g-3">
+        <h3 class="titulo">Contácteme !!</h3>
+        <article>
+          <div>
+            <img src="/img/iconos/gmail.png" alt="Correo Electrónico">
+            <h4>Correo: <a href="mailto:albertodevtrabajo@gmail.com" target="_blank">albertodevtrabajo@gmail.com</a></h4>
+          </div>
+
+          <div>
+            <img src="/img/iconos/linkedin.png" alt="Linkedin">
+            <h4>Linkedin: <a href="https://www.linkedin.com/in/alberto-godoy-borrego-817068168" target="_blank">in/alberto-godoy-borrego</a></h4>
+          </div>
+        </article>
+
+        <article display="inline-block">
+          <h3>Este sitio web ha sido creado por:</h3>
+          <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+          <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+          <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+          <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
+        </article>
+        <!-- <form class="row g-3">
           <div class="col-md-6">
             <label for="asunto" class="form-label">Asunto</label>
             <input type="text" class="form-control" id="asunto" placeholder="Asunto Correo">
@@ -138,9 +162,9 @@
           <div class="col-12">
             <button type="submit" class="btn btn-outline-primary">Enviar Correo</button>
           </div>
-        </form>        
-      </article>
+        </form>         -->
 
+      </article>
     </main>
 </body>
 </html>
