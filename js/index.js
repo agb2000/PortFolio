@@ -1,7 +1,7 @@
 import { crear_nodo } from "./module.js";
 
 document.getElementById("descargar").onclick = function () {
-    window.open("https://drive.google.com/file/d/14IAesZ3Ztv4rZwfl5eUXNHd4GyxwUhMY/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1cC5NCosIbfyxS-sWiVFKw-nUA40ej11L/view?usp=drive_link", "_blank");
 } // End del evento onclick
 
 conexion_ajax_datos();
